@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="site-title">My Land Property and Developers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=2.0">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html" id="brand-name">My Land Property and Developers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#properties">Properties</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#requirements">Requirements</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-lg-3" href="booking.html">Book Free Meeting</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="hero-section" style="background-image:linear-gradient(90deg,#0b1320,#142b4d)">
+    <div class="container hero-content py-5">
+      <div class="row">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold mb-3" id="hero-title">My Land Property and Developers</h1>
+          <p class="lead mb-4">Find your ideal plot, home, or commercial property with trusted guidance and transparent
+            dealing.</p>
+          <a class="btn btn-lg btn-primary" href="booking.html">Book Free Meeting</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-5" id="properties">
+      <div class="container">
+        <div class="d-flex align-items-end justify-content-between mb-3">
+          <div>
+            <h2 class="section-title mb-1">Turbat Valley</h2>
+            <div class="text-secondary">Latest listings from our portfolio</div>
+          </div>
+        </div>
+
+        <!-- Search Filter -->
+        <div class="admin-card p-4 mb-4">
+          <form id="searchForm" class="row g-3">
+            <div class="col-md-4">
+              <label class="form-label">Keyword</label>
+              <input type="text" id="keyword" class="form-control" placeholder="e.g. Plot, Villa">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Location</label>
+              <input type="text" id="location" class="form-control" placeholder="e.g. Phase 1">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Status</label>
+              <select id="status" class="form-select">
+                <option value="">All Statuses</option>
+                <option value="Available">Available</option>
+                <option value="Sold">Sold</option>
+              </select>
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+              <button type="submit" class="btn btn-primary w-100">Search</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="row g-4" id="properties-grid">
+          <!-- Properties will be loaded here via JS -->
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light" id="features-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Why Choose Us?</h2>
+          <p class="text-secondary">We provide the best services for our clients.</p>
+        </div>
+        <div class="row g-4 justify-content-center" id="features-grid">
+          <!-- Features will be loaded here via JS -->
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="requirements">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">Tell us what you need</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="admin-card p-4 text-start">
+              <form id="requestForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Name</label>
+                    <input class="form-control" id="req-name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Phone</label>
+                    <input class="form-control" id="req-phone" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" id="req-message" rows="3"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">Submit Requirements</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" id="whatsapp-link" href="#" target="_blank" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp"
+      viewBox="0 0 16 16">
+      <path
+        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+    </svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const settings = DataManager.getSettings();
+      const properties = DataManager.getProperties();
+
+      // Load Settings
+      document.title = settings.site_name;
+      document.getElementById('brand-name').textContent = settings.site_name;
+      document.getElementById('hero-title').textContent = settings.site_name;
+      if (settings.hero_image) {
+        document.getElementById('hero-section').style.backgroundImage = `url(${settings.hero_image})`;
+      }
+      document.getElementById('whatsapp-link').href = `https://wa.me/${settings.whatsapp_number}`;
+
+      // Load Features
+      const featuresGrid = document.getElementById('features-grid');
+      if (settings.good_things) {
+        settings.good_things.split('\n').forEach(line => {
+          if (!line.trim()) return;
+          const [title, desc] = line.split(':');
+          featuresGrid.innerHTML += `
+                    <div class="col-md-4">
+                        <div class="text-center p-3 h-100 bg-white shadow-sm rounded-4 border">
+                            <h5 class="fw-semibold mb-2">${title.trim()}</h5>
+                            <p class="small text-secondary mb-0">${desc ? desc.trim() : ''}</p>
+                        </div>
+                    </div>
+                `;
+        });
+      }
+
+      // Render Properties
+      const renderProperties = (filtered) => {
+        const grid = document.getElementById('properties-grid');
+        grid.innerHTML = '';
+        if (filtered.length === 0) {
+          grid.innerHTML = '<div class="col-12 text-center py-5 text-secondary">No properties found.</div>';
+          return;
+        }
+        filtered.forEach(p => {
+          grid.innerHTML += `
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card property-card h-100 shadow-sm">
+                            <a href="property.html?id=${p.id}" class="text-decoration-none text-dark">
+                                ${p.main_image ? `<img src="${p.main_image}" class="card-img-top" style="aspect-ratio:4/3; object-fit:cover;" alt="">` : `
+                                    <div class="bg-light d-flex align-items-center justify-content-center text-secondary" style="aspect-ratio:4/3; font-size: 3rem;">
+                                        <i class="bi bi-house"></i>
+                                    </div>`}
+                            </a>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start gap-2">
+                                    <h5 class="card-title mb-1">
+                                        <a href="property.html?id=${p.id}" class="text-decoration-none text-dark">${p.title}</a>
+                                    </h5>
+                                    <span class="badge ${p.status === 'Sold' ? 'bg-secondary' : 'bg-success'}">${p.status}</span>
+                                </div>
+                                <div class="text-secondary small mb-2">${p.location}</div>
+                                <div class="fw-semibold mb-1">PKR ${Number(p.price).toLocaleString()}</div>
+                                <a class="btn btn-outline-primary w-100 mb-2" href="property.html?id=${p.id}">More Details</a>
+                                <div class="d-flex gap-2 mt-2">
+                                    <a href="mailto:${settings.contact_email}" class="btn btn-outline-success" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                                    <a href="https://wa.me/${settings.whatsapp_number}" target="_blank" class="btn btn-outline-success flex-grow-1"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                                    <a href="tel:${settings.contact_phone}" class="btn btn-success flex-grow-1 text-uppercase"><i class="bi bi-telephone-fill"></i> Call</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+        });
+      };
+
+      renderProperties(properties);
+
+      // Search Logic
+      document.getElementById('searchForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const kw = document.getElementById('keyword').value.toLowerCase();
+        const loc = document.getElementById('location').value.toLowerCase();
+        const stat = document.getElementById('status').value;
+
+        const filtered = properties.filter(p => {
+          return (!kw || p.title.toLowerCase().includes(kw) || p.description.toLowerCase().includes(kw)) &&
+            (!loc || p.location.toLowerCase().includes(loc)) &&
+            (!stat || p.status === stat);
+        });
+        renderProperties(filtered);
+      });
+
+      // Request Form Logic
+      document.getElementById('requestForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const request = {
+          name: document.getElementById('req-name').value,
+          phone: document.getElementById('req-phone').value,
+          message: document.getElementById('req-message').value,
+          date: new Date().toISOString()
+        };
+        DataManager.addRequest(request);
+        alert('Your requirements have been submitted successfully!');
+        e.target.reset();
+      });
+    });
+  </script>
+</body>
+
+</html>

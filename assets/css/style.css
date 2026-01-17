@@ -1,0 +1,252 @@
+:root {
+  /* Ultra-Vibrant Rainbow Palette */
+  --color-indigo: #6366F1;
+  --color-pink: #EC4899;
+  --color-cyan: #06B6D4;
+  --color-amber: #F59E0B;
+  --color-emerald: #10B981;
+  --color-violet: #8B5CF6;
+  --color-rose: #F43F5E;
+
+  --dark-accent: #1E1B4B;
+  --body-bg: #FFFFFF;
+  --text-main: #0F172A;
+
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --glass: rgba(255, 255, 255, 0.85);
+}
+
+body {
+  font-family: 'Outfit', 'Inter', sans-serif;
+  color: var(--text-main);
+  background-color: var(--body-bg);
+}
+
+/* --- High-Color Navbar --- */
+.navbar {
+  background: linear-gradient(90deg, var(--color-indigo), var(--color-violet), var(--color-pink)) !important;
+  padding: 1rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 600;
+  margin: 0 0.5rem;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+  transform: translateY(-2px);
+  text-decoration: underline;
+}
+
+.btn-primary.ms-lg-3 {
+  background: #fff !important;
+  color: var(--color-indigo) !important;
+  border: none;
+  font-weight: 700;
+}
+
+/* --- Hero: Moving Rainbow Mesh --- */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  background: linear-gradient(-45deg, #6366F1, #EC4899, #06B6D4, #10B981);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  border-bottom: 10px solid var(--color-amber);
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Colorful Sections --- */
+section.py-5 {
+  padding: 7rem 0;
+}
+
+section#properties {
+  background: #fdf2f8;
+  /* Very light pink */
+}
+
+section#requirements {
+  background: #f0fdf4;
+  /* Very light emerald */
+}
+
+section.bg-light {
+  background: #eff6ff !important;
+  /* Very light blue */
+}
+
+/* --- Vivid Section Titles --- */
+.section-title {
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: var(--color-indigo);
+  margin-bottom: 2rem;
+  border-left: 8px solid var(--color-pink);
+  padding-left: 1.5rem;
+}
+
+/* --- Vibrant Property Cards --- */
+.property-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  background: #fff;
+}
+
+.property-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+}
+
+.property-card .card-body {
+  border-top: 5px solid var(--color-cyan);
+}
+
+.property-card:nth-child(even) .card-body {
+  border-top-color: var(--color-amber);
+}
+
+.property-card:nth-child(3n) .card-body {
+  border-top-color: var(--color-emerald);
+}
+
+/* --- Multi-Colored Buttons --- */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-indigo), var(--color-violet));
+  border: none;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.btn-outline-primary {
+  color: var(--color-indigo);
+  border: 2px solid var(--color-indigo);
+  font-weight: 700;
+}
+
+.btn-outline-primary:hover {
+  background: var(--color-indigo);
+  color: #fff;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, var(--color-emerald), #059669);
+  border: none;
+}
+
+/* --- Colorful Badges --- */
+.badge.bg-success {
+  background: var(--color-emerald) !important;
+  color: #fff !important;
+}
+
+.badge.bg-secondary {
+  background: var(--color-pink) !important;
+  color: #fff !important;
+}
+
+/* --- Animated WhatsApp Float --- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle at 30% 30%, #25D366, #128C7E);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* --- Admin Panel Vibrancy --- */
+.admin-shell {
+  background: #f5f3ff;
+}
+
+.admin-card {
+  border: none;
+  border-top: 4px solid var(--color-indigo);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.display-5 {
+  background: linear-gradient(45deg, var(--color-indigo), var(--color-pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+/* For compatibility */
+.display-5 {
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.section-title {
+  background: linear-gradient(45deg, var(--color-indigo), var(--color-cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
